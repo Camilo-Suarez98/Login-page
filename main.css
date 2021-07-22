@@ -1,0 +1,167 @@
+body {
+    margin: 0px;
+    font-family: 'Muli', sans-serif;
+}
+
+.header {
+    background-color: #21C08B;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image {
+    width: 200px;
+    margin-left: 30px;
+}
+
+.login {
+    background: linear-gradient(#21c08b, #ab88ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.login .container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #fff;
+    border-radius: 40px;
+    color: #fff;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.login .container h2 {
+    text-align: center;
+}
+
+.login .container .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login .container .form .input {
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid #fff;
+    font-family: 'Muli', sans-serif;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    font-size: 16px;
+    outline: none;
+    height: 50px;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.login .container .form .button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    height: 50px;
+    letter-spacing: 5px;
+    margin: 10px 0px;
+}
+
+.login .container .form .remember-password {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.login .container .form .remember-password label {
+    font-size: 14px;
+}
+
+.login .container .form .remember-password a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.login .container .form .remember-password a:hover {
+    text-decoration: underline;
+}
+
+.login .container .social-media > div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.login .container .social-media > div > img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.login .container .register {
+    font-size: 14px;
+}
+
+.login .container .register a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.login .container .register a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #ab88ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+}
+
+.footer a {
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    .login .container {
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .footer {
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+}
